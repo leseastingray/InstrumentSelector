@@ -6,13 +6,15 @@ using InstrumentSelector.Models;
 
 namespace InstrumentSelector.Repositories
 {
-    public class SelectionRepository : ISelectionRepository
+    public class FakeSelectionRepository : ISelectionRepository
     {
         private List<Selection> selections = new List<Selection>();
+        private List<SelectionResult> results = new List<SelectionResult>();
 
-        public List<Selection> Selections => selections;
+        public List<Selection> Selections { get { return selections;  } }
 
-        public List<SelectionResult> SelectionResults => throw new NotImplementedException();
+        public List<SelectionResult> SelectionResults { get { return results; } }
+
 
         public void AddSelection(Selection selection)
         {
@@ -21,7 +23,7 @@ namespace InstrumentSelector.Repositories
 
         public void AddSelectionResult(SelectionResult result)
         {
-            throw new NotImplementedException();
+            results.Add(result);
         }
     }
 }

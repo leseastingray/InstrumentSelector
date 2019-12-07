@@ -5836,30 +5836,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Student\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/amylese/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Student\\Documents\\RiverRay\\InstrumentSelector\\InstrumentSelectorTests\\InstrumentSelectorTests.csproj",
+      "projectUniqueName": "/Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelectorTests/InstrumentSelectorTests.csproj",
       "projectName": "InstrumentSelectorTests",
-      "projectPath": "C:\\Users\\Student\\Documents\\RiverRay\\InstrumentSelector\\InstrumentSelectorTests\\InstrumentSelectorTests.csproj",
-      "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Student\\Documents\\RiverRay\\InstrumentSelector\\InstrumentSelectorTests\\obj\\",
+      "projectPath": "/Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelectorTests/InstrumentSelectorTests.csproj",
+      "packagesPath": "/Users/amylese/.nuget/packages/",
+      "outputPath": "/Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelectorTests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/amylese/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5896,10 +5894,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

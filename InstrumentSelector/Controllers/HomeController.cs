@@ -10,11 +10,24 @@ namespace InstrumentSelector.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public ViewResult Index()
         {
             return View();
         }
 
+        public ViewResult Instrument()
+        {
+            return View();
+        }
+
+        public ViewResult WoodwindInstrument()
+        {
+            return View();
+        }
+        public ViewResult BrassInstrument()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{68F6F543-713F-422A-B5DA-283F3DFC41A9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InstrumentSelector/Controllers/SelectController.cs">
+    <Files>
+      <File FileName="InstrumentSelector/Controllers/HomeController.cs" Line="26" Column="10" />
+      <File FileName="InstrumentSelector/Controllers/SelectController.cs" Line="40" Column="48" />
+      <File FileName="InstrumentSelector/Models/SelectionResult.cs" Line="13" Column="47" />
+      <File FileName="InstrumentSelector/Models/Selection.cs" Line="21" Column="1" />
+      <File FileName="InstrumentSelector/Repositories/ISelectionRepository.cs" Line="13" Column="48" />
+      <File FileName="InstrumentSelector/Repositories/FakeSelectionRepository.cs" Line="23" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="InstrumentSelector" expanded="True">
+            <Node name="InstrumentSelector" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="SelectController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Select" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.InstrumentSelector PreferredExecutionTarget="/Applications/Firefox Nightly.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

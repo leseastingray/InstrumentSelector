@@ -8,7 +8,12 @@ namespace InstrumentSelector.Repositories
 {
     public interface ISelectionRepository
     {
-        List<Selection> Selections { get; }
+        // For Selections
+        List<Selection> Selections { get;  }
         void AddSelection(Selection selection);
+
+        // For SelectionResults
+        List<SelectionResult> SelectionResults { get; }
+        void AddSelectionResult(SelectionResult result);
     }
 }

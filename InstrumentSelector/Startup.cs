@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using InstrumentSelector.Models;
+using InstrumentSelector.Repositories;
 
 namespace InstrumentSelector
 {
@@ -31,7 +33,7 @@ namespace InstrumentSelector
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
+            services.AddTransient<ISelectionRepository, FakeSelectionRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

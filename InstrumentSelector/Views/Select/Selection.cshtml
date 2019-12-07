@@ -1,7 +1,60 @@
-﻿
+﻿@model InstrumentSelector.Models.Selection;
 @{
+    Layout = "_Layout_Select";
     ViewData["Title"] = "Selection";
 }
-
-<h1>Selection</h1>
-<p>This page will be the selection form.</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </head>
+    <body>
+        <div class="text-center">
+            <h1>Selection</h1>
+        </div>
+        <p>This page will be the selection form.</p>
+        <form asp-action="Selection" method="post">
+            <div>
+                <label>What size of instrument would you like to play?</label>
+                <select asp-for="PreferredSize">
+                    <option value="0">Huge</option>
+                    <option value="1">Large</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Small</option>
+                    <option value="4">Very Small</option>
+                </select>
+            </div>
+            <div>
+                <label>How high would you generally like to play?</label>
+                <select asp-for="PreferredRange">
+                    <option value="0">Very Low</option>
+                    <option value="1">Low</option>
+                    <option value="2">Middle</option>
+                    <option value="3">High</option>
+                    <option value="4">Very High</option>
+                </select>
+            </div>
+            <div>
+                <label>What sounds do you like best?</label>
+                <select asp-for="PreferredTone">
+                    <option value="0">Heavy</option>
+                    <option value="1">Dark</option>
+                    <option value="2">Mellow</option>
+                    <option value="3">Reedy</option>
+                    <option value="4">Bright</option>
+                </select>
+            </div>
+            <div>
+                <label>What level of difficulty do you like your music to be?</label>
+                <select asp-for="PreferredRange">
+                    <option value="0">Easy</option>
+                    <option value="1">Moderate</option>
+                    <option value="2">Difficult</option>
+                    <option value="3">Very Challenging</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
