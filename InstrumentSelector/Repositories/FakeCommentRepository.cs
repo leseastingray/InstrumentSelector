@@ -8,16 +8,18 @@ namespace InstrumentSelector.Repositories
 {
     public class FakeCommentRepository : ICommentRepository
     {
+        private static List<Comment> comments = new List<Comment>();
         public FakeCommentRepository()
         {
         }
 
-        public List<Comment> Comments => throw new NotImplementedException();
+        public List<Comment> Comments { get { return comments; } }
 
         public void AddComment(Comment comment)
         {
-            throw new NotImplementedException();
+            comments.Add(comment);
         }
+
 
         public Comment GetCommentByInstrument(string instrument)
         {

@@ -11,6 +11,8 @@ namespace InstrumentSelector.Controllers
 {
     public class HomeController : Controller
     {
+
+        //private static List<Comment> comments = new List<Comment>();
         // declaration of repo (works for both children)
         ICommentRepository repo;
         public HomeController(ICommentRepository r)
@@ -48,7 +50,14 @@ namespace InstrumentSelector.Controllers
             repo.AddComment(comment);
             return View();
         }
+        [HttpGet]
         // TODO : fetch comments
+        public ViewResult GetComments()
+        {
+            List<Comment>comments = repo.Comments;
+            comments.Sort((c1, c2) => DateTime.Compare(c1.CommentTime, c2.CommentTime));
+            return View(comments);
+        }
         public IActionResult Privacy()
         {
             return View();

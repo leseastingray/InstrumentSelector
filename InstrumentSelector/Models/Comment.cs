@@ -9,7 +9,7 @@ namespace InstrumentSelector.Models
     {
         public string CommentText { get; set; }
         public DateTime CommentTime { get; set; }
-        public User UserName { get; set; }
-        public Instrument Instrument { get; set; }
+        public String UserName { get; set; }
+        public String Instrument { get; set; }
     }
 }

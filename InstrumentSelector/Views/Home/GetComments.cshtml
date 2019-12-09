@@ -1,0 +1,37 @@
+﻿@model IEnumerable<InstrumentSelector.Models.Comment>
+@{
+    ViewData["Title"] = "Get Comments";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <h1>Get Comments</h1>
+    <div class="panel-body">
+        <table class="table table-lg table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Instrument</th>
+                    <th>Comment Content</th>
+                    <th>UserName</th>
+                    <th>Date & Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Comment c in Model)
+                {
+                    <tr>
+                        <td class="info">@c.Instrument</td>
+                        <td>@c.CommentText</td>
+                        <td class="info">@c.UserName</td>
+                        <td>@c.CommentTime.ToString()</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

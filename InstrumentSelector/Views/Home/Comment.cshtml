@@ -1,6 +1,6 @@
 ﻿@model InstrumentSelector.Models.Comment
 @{
-    ViewData["Title"] = "Woodwind Instruments";
+    ViewData["Title"] = "Comment";
 }
 <!DOCTYPE html>
 <html>
@@ -12,7 +12,7 @@
     <div class="text-center">
         <h1>Add a Comment</h1>
     </div>
-    <form asp-action="Comment" method="post>
+    <form asp-action="Comment" method="post">
         <div>
             <label asp-for="Instrument">Instrument</label>
             <input asp-for="Instrument" />
@@ -28,7 +28,7 @@
         <button type="submit">Post</button>
     </form>
     <div>
-
+        <a asp-action="GetComments">See Other Comments</a>
     </div>
 </body>
 </html>
