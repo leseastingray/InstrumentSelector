@@ -87,7 +87,9 @@ namespace InstrumentSelector.Repositories
                 DescriptionText = "Flute",
                 Size = "4",
                 Range = "4",
+                RangeDescription = "Very high",
                 Tone = "4",
+                ToneDescription = "Bright",
                 Technical = "3"
             };
             Instrument oboe = new Instrument()
@@ -95,7 +97,9 @@ namespace InstrumentSelector.Repositories
                 DescriptionText = "Oboe",
                 Size = "3",
                 Range = "3",
+                RangeDescription = "High",
                 Tone = "3",
+                ToneDescription = "Reedy",
                 Technical = "2"
             };
             Instrument clarinet = new Instrument()
@@ -103,7 +107,9 @@ namespace InstrumentSelector.Repositories
                 DescriptionText = "Clarinet",
                 Size = "3",
                 Range = "3",
+                RangeDescription = "High",
                 Tone = "2",
+                ToneDescription = "Mellow",
                 Technical = "3"
             };
             Instrument saxophone = new Instrument()
@@ -111,7 +117,9 @@ namespace InstrumentSelector.Repositories
                 DescriptionText = "Saxophone",
                 Size = "2",
                 Range = "2",
+                RangeDescription = "Middle",
                 Tone = "2",
+                ToneDescription = "Mellow",
                 Technical = "2"
             };
             Instrument bassoon = new Instrument()
@@ -119,7 +127,9 @@ namespace InstrumentSelector.Repositories
                 DescriptionText = "Bassoon",
                 Size = "1",
                 Range = "1",
+                RangeDescription = "Low",
                 Tone = "3",
+                ToneDescription = "Reedy",
                 Technical = "1"
             };
             Instrument trumpet = new Instrument()
@@ -127,7 +137,9 @@ namespace InstrumentSelector.Repositories
                 DescriptionText = "Trumpet",
                 Size = "3",
                 Range = "3",
+                RangeDescription = "High",
                 Tone = "4",
+                ToneDescription = "Bright",
                 Technical = "3"
             };
             Instrument horn = new Instrument()
@@ -135,7 +147,9 @@ namespace InstrumentSelector.Repositories
                 DescriptionText = "French Horn",
                 Size = "2",
                 Range = "2",
+                RangeDescription = "Middle",
                 Tone = "2",
+                ToneDescription = "Mellow",
                 Technical = "1"
             };
             Instrument trombone = new Instrument()
@@ -143,7 +157,9 @@ namespace InstrumentSelector.Repositories
                 DescriptionText = "Trombone",
                 Size = "1",
                 Range = "1",
+                RangeDescription = "Low",
                 Tone = "1",
+                ToneDescription = "Dark",
                 Technical = "1"
             };
             Instrument euphonium = new Instrument()
@@ -151,7 +167,9 @@ namespace InstrumentSelector.Repositories
                 DescriptionText = "Euphonium",
                 Size = "0",
                 Range = "1",
+                RangeDescription = "Low",
                 Tone = "2",
+                ToneDescription = "Heavy",
                 Technical = "2"
             };
             Instrument tuba = new Instrument()
@@ -159,7 +177,9 @@ namespace InstrumentSelector.Repositories
                 DescriptionText = "Tuba",
                 Size = "0",
                 Range = "0",
+                RangeDescription = "Very low",
                 Tone = "0",
+                ToneDescription = "Heavy",
                 Technical = "0"
             };
             instruments.Add(flute);

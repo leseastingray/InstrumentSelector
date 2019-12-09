@@ -15,10 +15,10 @@ namespace InstrumentSelector.Controllers
         string resultText;
 
         private static List<Instrument> instruments = new List<Instrument>();
-        private static List<Instrument> sizeInstruments = new List<Instrument>();
-        private static List<Instrument> rangeInstruments = new List<Instrument>();
-        private static List<Instrument> toneInstruments = new List<Instrument>();
-        private static List<Instrument> technicalInstruments = new List<Instrument>();
+        private List<Instrument> sizeInstruments = new List<Instrument>();
+        private List<Instrument> rangeInstruments = new List<Instrument>();
+        private List<Instrument> toneInstruments = new List<Instrument>();
+        private List<Instrument> technicalInstruments = new List<Instrument>();
 
         // Repository declaration
         ISelectionRepository repo;

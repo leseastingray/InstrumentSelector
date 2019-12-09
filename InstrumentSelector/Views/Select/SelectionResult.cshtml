@@ -11,12 +11,14 @@
     </head>
     <body>
         <h1>Selection Results</h1>
-        <p>Below are your results. Visit the instrument pages for more information.</p>
+        <p>Below are your results. Navigate to the instrument pages for more information.</p>
         <p>
-        @foreach (Instrument i in Model)
-        {
-            <h2>@i.DescriptionText</h2>
-        }
+            @foreach (Instrument i in Model)
+            {
+                <h2>Instrument: @i.DescriptionText</h2>
+                <p>Range: @i.RangeDescription</p>
+                <p>Tone Quality: @i.ToneDescription</p>
+            }
         </p>
     </body>
 </html>

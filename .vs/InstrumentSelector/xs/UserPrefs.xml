@@ -1,25 +1,21 @@
 ﻿<Properties StartupConfiguration="{68F6F543-713F-422A-B5DA-283F3DFC41A9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="InstrumentSelector/Controllers/SelectController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InstrumentSelector/Repositories/FakeInstrumentRepository.cs">
     <Files>
-      <File FileName="InstrumentSelector/Controllers/SelectController.cs" Line="100" Column="61" />
-      <File FileName="InstrumentSelector/Repositories/FakeSelectionRepository.cs" Line="8" Column="2" />
-      <File FileName="InstrumentSelector/Repositories/FakeInstrumentRepository.cs" Line="35" Column="33" />
-      <File FileName="InstrumentSelector/Views/Select/SelectionResult.cshtml" Line="14" Column="48" />
-      <File FileName="InstrumentSelector/Repositories/SelectionRepository.cs" Line="6" Column="1" />
-      <File FileName="InstrumentSelector/Repositories/IInstrumentRepository.cs" Line="1" Column="1" />
-      <File FileName="InstrumentSelector/Models/Instrument.cs" Line="1" Column="1" />
+      <File FileName="InstrumentSelector/Controllers/SelectController.cs" Line="16" Column="1" />
+      <File FileName="InstrumentSelector/Models/Selection.cs" Line="17" Column="65" />
+      <File FileName="InstrumentSelector/Repositories/FakeInstrumentRepository.cs" Line="182" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="InstrumentSelector" expanded="True">
             <Node name="InstrumentSelector" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="SelectController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Repositories" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="FakeInstrumentRepository.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Select" expanded="True" />
