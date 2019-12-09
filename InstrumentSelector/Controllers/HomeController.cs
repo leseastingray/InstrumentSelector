@@ -5,11 +5,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using InstrumentSelector.Models;
+using InstrumentSelector.Repositories;
 
 namespace InstrumentSelector.Controllers
 {
     public class HomeController : Controller
     {
+        // declaration of repo (works for both children)
+        ICommentRepository repo;
+        public HomeController(ICommentRepository r)
+        {
+            repo = r;
+        }
         public ViewResult Index()
         {
             return View();
@@ -28,6 +35,20 @@ namespace InstrumentSelector.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public ViewResult Comment()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ViewResult Comment(Comment comment)
+        {
+            // stores contact messages
+            comment.CommentTime = DateTime.Now;
+            repo.AddComment(comment);
+            return View();
+        }
+        // TODO : fetch comments
         public IActionResult Privacy()
         {
             return View();
