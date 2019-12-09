@@ -1,5 +1,5 @@
-﻿
-@{
+﻿@model IEnumerable<InstrumentSelector.Models.Instrument>
+@{ 
     Layout = "_Layout_Select";
     ViewData["Title"] = "Selection Result";
 }
@@ -10,7 +10,13 @@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     </head>
     <body>
-        <h1>SelectionResult</h1>
-        <p>This page will list the selection result.</p>
+        <h1>Selection Results</h1>
+        <p>Below are your results. Visit the instrument pages for more information.</p>
+        <p>
+        @foreach (Instrument i in Model)
+        {
+            <h2>@i.DescriptionText</h2>
+        }
+        </p>
     </body>
 </html>

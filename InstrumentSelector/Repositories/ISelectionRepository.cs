@@ -13,7 +13,12 @@ namespace InstrumentSelector.Repositories
         void AddSelection(Selection selection);
 
         // For SelectionResults
-        List<SelectionResult> SelectionResults { get; }
+        //List<SelectionResult> SelectionResults { get; }
         void AddSelectionResult(SelectionResult result);
+
+        // Get Selection by Instrument Result
+        Selection GetSelectionByInstrument(string instrument);
+        // Get SelectionResult by Instrument Result
+        SelectionResult GetSelectionResultByInstrument(string instrument);
     }
 }

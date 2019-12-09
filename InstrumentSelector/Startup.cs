@@ -34,6 +34,9 @@ namespace InstrumentSelector
             });
 
             services.AddTransient<ISelectionRepository, FakeSelectionRepository>();
+            services.AddTransient<IInstrumentRepository, FakeInstrumentRepository>();
+            services.AddTransient<ICommentRepository, FakeCommentRepository>();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

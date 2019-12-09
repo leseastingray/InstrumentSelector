@@ -47,7 +47,7 @@
             </div>
             <div>
                 <label>What level of difficulty do you like your music to be?</label>
-                <select asp-for="PreferredRange">
+                <select asp-for="PreferredTechnical">
                     <option value="0">Easy</option>
                     <option value="1">Moderate</option>
                     <option value="2">Difficult</option>
@@ -56,5 +56,6 @@
             </div>
             <button type="submit">Submit</button>
         </form>
+        <div>Click <a asp-action="SelectionResult">here</a> for your results!</div>
     </body>
 </html>

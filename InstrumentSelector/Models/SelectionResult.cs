@@ -13,5 +13,6 @@ namespace InstrumentSelector.Models
         public string ResultText { get; set; }
 
         public Instrument Instrument { get; set; }
+        public Instrument SecondInstrument { get; set; }
     }
 }

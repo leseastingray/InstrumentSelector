@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
 namespace InstrumentSelector.Models
 {
     public class Instrument
     {
-        private List<Instrument> instruments = new List<Instrument>();
-        private List<Comment> comments = new List<Comment>();
+        private static List<Instrument> instruments = new List<Instrument>();
+        private static List<Comment> comments = new List<Comment>();
 
         public string Size { get; set; }
         public string Range { get; set; }

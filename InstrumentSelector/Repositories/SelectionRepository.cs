@@ -8,7 +8,7 @@ namespace InstrumentSelector.Repositories
 {
     public class SelectionRepository : ISelectionRepository
     {
-        private List<Selection> selections = new List<Selection>();
+        private static List<Selection> selections = new List<Selection>();
 
         public List<Selection> Selections => selections;
 
@@ -20,6 +20,16 @@ namespace InstrumentSelector.Repositories
         }
 
         public void AddSelectionResult(SelectionResult result)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Selection GetSelectionByInstrument(string instrument)
+        {
+            throw new NotImplementedException();
+        }
+
+        public SelectionResult GetSelectionResultByInstrument(string instrument)
         {
             throw new NotImplementedException();
         }
