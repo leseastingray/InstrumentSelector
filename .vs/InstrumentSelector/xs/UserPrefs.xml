@@ -1,9 +1,10 @@
-﻿<Properties StartupConfiguration="{68F6F543-713F-422A-B5DA-283F3DFC41A9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="InstrumentSelector/Repositories/FakeInstrumentRepository.cs">
+﻿<Properties StartupConfiguration="{BCF4A0FB-2959-427E-A8EA-4FEDFB4107FB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InstrumentSelectorTests/HomeTests.cs">
     <Files>
-      <File FileName="InstrumentSelector/Controllers/SelectController.cs" Line="16" Column="1" />
-      <File FileName="InstrumentSelector/Models/Selection.cs" Line="17" Column="65" />
-      <File FileName="InstrumentSelector/Repositories/FakeInstrumentRepository.cs" Line="182" Column="43" />
+      <File FileName="InstrumentSelectorTests/SelectTests.cs" Line="1" Column="1" />
+      <File FileName="InstrumentSelectorTests/CommentTests.cs" Line="33" Column="14" />
+      <File FileName="InstrumentSelector/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="InstrumentSelector/Models/Comment.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,29 +14,35 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Repositories" expanded="True">
-                <Node name="FakeInstrumentRepository.cs" selected="True" />
-              </Node>
+              <Node name="Repositories" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Select" expanded="True" />
               </Node>
             </Node>
-            <Node name="InstrumentSelectorTests" expanded="True" />
+            <Node name="InstrumentSelectorTests" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="HomeTests.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>repo</Value>
-          <Value>viewResults</Value>
-          <Value>s</Value>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="InstrumentSelector" expanded="True">
+            <Node name="InstrumentSelectorTests" expanded="True">
+              <Node name="InstrumentSelectorTests" expanded="True">
+                <Node name="SelectTests" expanded="True" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.InstrumentSelectorTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.InstrumentSelector PreferredExecutionTarget="/Applications/Firefox Nightly.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

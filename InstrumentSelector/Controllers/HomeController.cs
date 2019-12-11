@@ -51,7 +51,6 @@ namespace InstrumentSelector.Controllers
             return View();
         }
         [HttpGet]
-        // TODO : fetch comments
         public ViewResult GetComments()
         {
             List<Comment>comments = repo.Comments;
