@@ -8,6 +8,9 @@ namespace InstrumentSelector.Models
     // This is the class to represent the user's selections
     public class Selection
     {
+        // Primary Key ID
+        public int SelectionID { get; set; }
+
         // 0 = huge, 1 = large, 2 = medium, 3 = small 4 = very small
         public string PreferredSize { get; set; }
 

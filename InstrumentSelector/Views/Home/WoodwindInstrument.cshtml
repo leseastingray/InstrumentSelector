@@ -1,4 +1,5 @@
-﻿@{
+﻿@model InstrumentSelector.Models.Instrument;
+@{
     ViewData["Title"] = "Woodwind Instruments";
 }
 <!DOCTYPE html>
@@ -8,25 +9,37 @@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     </head>
     <body>
-        <h1>Woodwind Instruments</h1>
+        <div class="text-center">
+            <h1>Woodwind Instruments</h1>
+        </div>
         <p>
-            This page will contain the woodwind instrument selections:
+            This page contains the woodwind instrument selections:
             flute, oboe, clarinet, saxophone, bassoon.
         </p>
         <div>
             <h2>Flute</h2>
+            <p>Range: Very high</p>
+            <p>Tone: Bright</p>
         </div>
         <div>
             <h2>Oboe</h2>
+            <p>Range: High</p>
+            <p>Tone: Reedy</p>
         </div>
         <div>
             <h2>Clarinet</h2>
+            <p>Range: High</p>
+            <p>Tone: Mellow</p>
         </div>
         <div>
             <h2>Saxophone</h2>
+            <p>Range: Middle</p>
+            <p>Tone: Mellow</p>
         </div>
         <div>
             <h2>Bassoon</h2>
+            <p>Range: Low</p>
+            <p>Tone: Reedy</p>
         </div>
         <div>Submit comments <a asp-action="Comment">HERE</a></div>
     </body>

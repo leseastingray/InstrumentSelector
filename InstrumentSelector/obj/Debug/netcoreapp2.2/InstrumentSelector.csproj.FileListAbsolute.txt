@@ -36,7 +36,6 @@
 /Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/InstrumentSelector.dll
 /Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/InstrumentSelector.pdb
 /Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/InstrumentSelector.csproj.CopyComplete
-/Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout_Select.cshtml.g.cs
 C:/Users/Student/Documents/RiverRay/InstrumentSelector/InstrumentSelector/bin/Debug/netcoreapp2.2/InstrumentSelector.deps.json
 C:/Users/Student/Documents/RiverRay/InstrumentSelector/InstrumentSelector/bin/Debug/netcoreapp2.2/InstrumentSelector.runtimeconfig.json
 C:/Users/Student/Documents/RiverRay/InstrumentSelector/InstrumentSelector/bin/Debug/netcoreapp2.2/InstrumentSelector.runtimeconfig.dev.json

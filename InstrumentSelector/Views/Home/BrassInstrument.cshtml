@@ -1,4 +1,5 @@
-﻿@{
+﻿@model InstrumentSelector.Models.Instrument;
+@{
     ViewData["Title"] = "Brass Instruments";
 }
 <!DOCTYPE html>
@@ -8,8 +9,36 @@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     </head>
     <body>
-        <h1>Brass Instruments</h1>
-        <p>This page will contain the brass instrument selections:
+        <div class="text-center">
+            <h1>Brass Instruments</h1>
+        </div>
+        <p>This page contains the brass instrument selections:
             trumpet, horn, trombone, euphonium, tuba.</p>
+        <div>
+            <h2>Trumpet</h2>
+            <p>Range: High</p>
+            <p>Tone: Bright</p>
+        </div>
+        <div>
+            <h2>French Horn</h2>
+            <p>Range: Middle</p>
+            <p>Tone: Mellow</p>
+        </div>
+        <div>
+            <h2>Trombone</h2>
+            <p>Range: Low</p>
+            <p>Tone: Dark</p>
+        </div>
+        <div>
+            <h2>Euphonium</h2>
+            <p>Range: Low</p>
+            <p>Tone: Heavy</p>
+        </div>
+        <div>
+            <h2>Tuba</h2>
+            <p>Range: Very low</p>
+            <p>Tone: Heavy</p>
+        </div>
+        <div>Submit comments <a asp-action="Comment">HERE</a></div>
     </body>
 </html>

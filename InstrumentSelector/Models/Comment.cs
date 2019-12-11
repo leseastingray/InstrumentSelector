@@ -7,6 +7,9 @@ namespace InstrumentSelector.Models
 {
     public class Comment
     {
+        // Primary Key ID
+        public int CommentID { get; set; }
+
         public string CommentText { get; set; }
         public DateTime CommentTime { get; set; }
         public String UserName { get; set; }

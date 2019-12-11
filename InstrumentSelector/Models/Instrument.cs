@@ -9,6 +9,9 @@ namespace InstrumentSelector.Models
         private static List<Instrument> instruments = new List<Instrument>();
         private static List<Comment> comments = new List<Comment>();
 
+        // Primary Key ID
+        public int InstrumentID { get; set; }
+
         public string Size { get; set; }
         // 0 = very low, 1 = low, 2 = middle, 3 = high 4 = very high
         public string Range { get; set; }
