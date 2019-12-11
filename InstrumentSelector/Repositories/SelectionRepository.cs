@@ -8,30 +8,57 @@ namespace InstrumentSelector.Repositories
 {
     public class SelectionRepository : ISelectionRepository
     {
+        // Added for EF
+        private AppDbContext context;
+
         private static List<Selection> selections = new List<Selection>();
+        private List<SelectionResult> results = new List<SelectionResult>();
 
-        public List<Selection> Selections => selections;
+        // edited for EF
+        public List<Selection> Selections { get { return context.Selections.ToList(); } }
 
-        public List<SelectionResult> SelectionResults => throw new NotImplementedException();
+        //public List<SelectionResult> SelectionResults { get { return results; } }
 
+        // Added constructor for EF
+        public SelectionRepository(AppDbContext appDbContext)
+        {
+            context = appDbContext;
+        }
+        // edited all for EF
         public void AddSelection(Selection selection)
         {
-            selections.Add(selection);
+            context.Selections.Add(selection);
+            context.SaveChanges();
         }
-
+        /*
         public void AddSelectionResult(SelectionResult result)
         {
-            throw new NotImplementedException();
+            results.Add(result);
+        }
+
+        public Selection GetSelectionByInstrument(Instrument instrument)
+        {
+            Selection selection;
+            selection = context.Selections.Find(s => s.PreferredInstrument == instrument);
+            return selection;
         }
 
         public Selection GetSelectionByInstrument(string instrument)
         {
-            throw new NotImplementedException();
+            Selection selection = selections.Find(s => s.PreferredInstrument.ToString() == instrument);
+            return selection;
+        }
+
+        public SelectionResult GetSelectionResultByInstrument(Instrument instrument)
+        {
+            SelectionResult result = results.Find(r => r.Instrument == instrument);
+            return result;
         }
 
         public SelectionResult GetSelectionResultByInstrument(string instrument)
         {
             throw new NotImplementedException();
         }
+        */
     }
 }

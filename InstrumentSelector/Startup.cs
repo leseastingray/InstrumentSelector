@@ -11,17 +11,24 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using InstrumentSelector.Models;
 using InstrumentSelector.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace InstrumentSelector
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        // Added for MySQL (also added Pomelo.EntityFrameworkCore.MySql Nuget package
+        private IHostingEnvironment environment;
 
         public IConfiguration Configuration { get; }
+
+        public Startup(IConfiguration configuration, IHostingEnvironment env)
+        {
+            Configuration = configuration;
+            // Added for MySQL
+            environment = env;
+        }
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -33,15 +40,36 @@ namespace InstrumentSelector
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddTransient<ISelectionRepository, FakeSelectionRepository>();
-            services.AddTransient<IInstrumentRepository, FakeInstrumentRepository>();
-            services.AddTransient<ICommentRepository, FakeCommentRepository>();
+            //services.AddTransient<ISelectionRepository, FakeSelectionRepository>();
+            services.AddTransient<ISelectionRepository, SelectionRepository>();
+            //services.AddTransient<IInstrumentRepository, FakeInstrumentRepository>();
+            services.AddTransient<IInstrumentRepository, InstrumentRepository>();
+            //services.AddTransient<ICommentRepository, FakeCommentRepository>();
+            services.AddTransient<ICommentRepository, CommentRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-        }
 
+            // Added for MySQL
+            if (environment.IsDevelopment())
+            {
+                services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
+                   Configuration["ConnectionStrings:MsSqlConnection"]));
+            }
+            else if (environment.IsProduction())
+            {
+                services.AddDbContext<AppDbContext>(options => options.UseMySql(
+                    Configuration["ConnectionStrings:MySqlConnection"]));
+            }
+
+            /*   // For Mac OS with SQLite
+            services.AddDbContext<AppDbContext>(
+                options => options.UseSqlite(
+                    Configuration["ConnectionStrings:SQLiteConnection"]));
+            */
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        // Edited for EF
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, AppDbContext context)
         {
             if (env.IsDevelopment())
             {
@@ -64,6 +92,12 @@ namespace InstrumentSelector
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-        }
+                // Create or update the database and apply migrations.
+                context.Database.Migrate();
+
+                // Add a book and review or two as sample/test data.
+                //SeedData.Seed(context);
+            }
     }
 }
+

@@ -1,33 +1,24 @@
 ﻿<Properties StartupConfiguration="{68F6F543-713F-422A-B5DA-283F3DFC41A9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="InstrumentSelector/Views/Home/GetComments.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InstrumentSelector/Repositories/CommentRepository.cs">
     <Files>
-      <File FileName="InstrumentSelector/Views/Home/Instrument.cshtml" Line="12" Column="28" />
-      <File FileName="InstrumentSelector/Views/Home/GetComments.cshtml" Line="3" Column="26" />
+      <File FileName="InstrumentSelector/Startup.cs" Line="46" Column="82" />
+      <File FileName="InstrumentSelector/Repositories/CommentRepository.cs" Line="24" Column="35" />
+      <File FileName="InstrumentSelector/Repositories/InstrumentRepository.cs" Line="206" Column="1" />
+      <File FileName="InstrumentSelector/Repositories/AppDbContext.cs" Line="14" Column="53" />
+      <File FileName="InstrumentSelector/Repositories/SelectionRepository.cs" Line="1" Column="1" />
+      <File FileName="InstrumentSelector/Repositories/ISelectionRepository.cs" Line="18" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="InstrumentSelector" expanded="True">
             <Node name="InstrumentSelector" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="GetComments.cshtml" selected="True" />
-                </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="CommentRepository.cs" selected="True" />
               </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="InstrumentSelector" expanded="True">
-            <Node name="InstrumentSelectorTests" expanded="True">
-              <Node name="InstrumentSelectorTests" expanded="True">
-                <Node name="HomeTests" expanded="True">
-                  <Node name="GetCommentsTest" selected="True" />
-                </Node>
-              </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>

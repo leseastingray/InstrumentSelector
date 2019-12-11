@@ -25,7 +25,6 @@
 /Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/Razor/Views/Select/SelectionResult.cshtml.g.cs
 /Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_CookieConsentPartial.cshtml.g.cs
-/Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout _Select.cshtml.g.cs
 /Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
 /Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.cshtml.g.cs
@@ -77,3 +76,4 @@ C:/Users/Student/Documents/RiverRay/InstrumentSelector/InstrumentSelector/obj/De
 C:/Users/Student/Documents/RiverRay/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/InstrumentSelector.csprojAssemblyReference.cache
 /Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/Razor/Views/Home/Comment.cshtml.g.cs
 /Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/Razor/Views/Home/GetComments.cshtml.g.cs
+/Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_LayoutSelect.cshtml.g.cs

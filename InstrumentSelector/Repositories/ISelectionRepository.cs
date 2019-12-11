@@ -14,11 +14,11 @@ namespace InstrumentSelector.Repositories
 
         // For SelectionResults
         //List<SelectionResult> SelectionResults { get; }
-        void AddSelectionResult(SelectionResult result);
+        //void AddSelectionResult(SelectionResult result);
 
         // Get Selection by Instrument Result
-        Selection GetSelectionByInstrument(string instrument);
+        //Selection GetSelectionByInstrument(string instrument);
         // Get SelectionResult by Instrument Result
-        SelectionResult GetSelectionResultByInstrument(string instrument);
+        //SelectionResult GetSelectionResultByInstrument(string instrument);
     }
 }

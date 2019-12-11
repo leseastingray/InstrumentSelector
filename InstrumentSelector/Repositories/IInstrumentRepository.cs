@@ -8,7 +8,7 @@ namespace InstrumentSelector.Repositories
 {
     public interface IInstrumentRepository
     {
-        IQueryable<Instrument> Instruments { get; }
+        List<Instrument> Instruments { get; }
         void AddInstrument(Instrument instrument);
         void AddDefaultInstruments();
 
@@ -16,6 +16,6 @@ namespace InstrumentSelector.Repositories
         List<Instrument> GetInstrumentsByRange(string range);
         List<Instrument> GetInstrumentsByTone(string tone);
         List<Instrument> GetInstrumentsByTechnical(string technical);
-        Instrument GetInstrumentByDescription(string description);
+        //Instrument GetInstrumentByDescription(string description);
     }
 }

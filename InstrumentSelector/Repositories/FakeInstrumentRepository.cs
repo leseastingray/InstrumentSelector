@@ -9,7 +9,7 @@ namespace InstrumentSelector.Repositories
     public class FakeInstrumentRepository : IInstrumentRepository
     {
         private static List<Instrument> instruments = new List<Instrument>();
-        public IQueryable<Instrument> Instruments { get { return instruments.AsQueryable<Instrument>(); } }
+        public List<Instrument> Instruments { get { return instruments; } }
 
         public FakeInstrumentRepository()
         {
