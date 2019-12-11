@@ -95,8 +95,8 @@ namespace InstrumentSelector
                 // Create or update the database and apply migrations.
                 context.Database.Migrate();
 
-                // Add a book and review or two as sample/test data.
-                //SeedData.Seed(context);
+                // Add a comment or two as sample/test data.
+                SeedData.Seed(context);
             }
     }
 }

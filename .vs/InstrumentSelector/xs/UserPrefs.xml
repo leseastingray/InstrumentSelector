@@ -1,24 +1,18 @@
 ﻿<Properties StartupConfiguration="{68F6F543-713F-422A-B5DA-283F3DFC41A9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="InstrumentSelector/Repositories/CommentRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InstrumentSelector/appsettings.Production.json">
     <Files>
-      <File FileName="InstrumentSelector/Startup.cs" Line="46" Column="82" />
-      <File FileName="InstrumentSelector/Repositories/CommentRepository.cs" Line="24" Column="35" />
-      <File FileName="InstrumentSelector/Repositories/InstrumentRepository.cs" Line="206" Column="1" />
-      <File FileName="InstrumentSelector/Repositories/AppDbContext.cs" Line="14" Column="53" />
-      <File FileName="InstrumentSelector/Repositories/SelectionRepository.cs" Line="1" Column="1" />
-      <File FileName="InstrumentSelector/Repositories/ISelectionRepository.cs" Line="18" Column="1" />
+      <File FileName="InstrumentSelector/Startup.cs" Line="99" Column="17" />
+      <File FileName="InstrumentSelector/appsettings.json" Line="1" Column="1" />
+      <File FileName="InstrumentSelector/appsettings.Production.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="InstrumentSelector" expanded="True">
             <Node name="InstrumentSelector" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Repositories" expanded="True">
-                <Node name="CommentRepository.cs" selected="True" />
+              <Node name="appsettings.json" expanded="True">
+                <Node name="appsettings.Production.json" selected="True" />
               </Node>
-              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -27,7 +21,6 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.InstrumentSelectorTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.InstrumentSelector PreferredExecutionTarget="/Applications/Firefox Nightly.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
