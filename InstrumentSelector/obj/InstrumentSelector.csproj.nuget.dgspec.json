@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/InstrumentSelector.csproj": {}
+    "C:\\Users\\Merokemeh\\Documents\\CS295N\\InstrumentSelector\\InstrumentSelector\\InstrumentSelector.csproj": {}
   },
   "projects": {
-    "/Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/InstrumentSelector.csproj": {
+    "C:\\Users\\Merokemeh\\Documents\\CS295N\\InstrumentSelector\\InstrumentSelector\\InstrumentSelector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/InstrumentSelector.csproj",
+        "projectUniqueName": "C:\\Users\\Merokemeh\\Documents\\CS295N\\InstrumentSelector\\InstrumentSelector\\InstrumentSelector.csproj",
         "projectName": "InstrumentSelector",
-        "projectPath": "/Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/InstrumentSelector.csproj",
-        "packagesPath": "/Users/amylese/.nuget/packages/",
-        "outputPath": "/Users/amylese/Documents/ASP.NET/InstrumentSelector/InstrumentSelector/obj/",
+        "projectPath": "C:\\Users\\Merokemeh\\Documents\\CS295N\\InstrumentSelector\\InstrumentSelector\\InstrumentSelector.csproj",
+        "packagesPath": "C:\\Users\\Merokemeh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Merokemeh\\Documents\\CS295N\\InstrumentSelector\\InstrumentSelector\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/amylese/.config/NuGet/NuGet.Config"
+          "C:\\Users\\Merokemeh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,16 +76,10 @@
             }
           },
           "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
+            "net461"
           ],
           "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "warn": true
         }
       }
     }

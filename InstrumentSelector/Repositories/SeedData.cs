@@ -10,6 +10,11 @@ namespace InstrumentSelector.Repositories
     {
         public static void Seed(AppDbContext context)
         {
+            // debugging for migrations
+            if (System.Diagnostics.Debugger.IsAttached == false)
+            {
+                System.Diagnostics.Debugger.Launch();
+            }
             if (!context.Comments.Any())
             {
                 Comment comment = new Comment
